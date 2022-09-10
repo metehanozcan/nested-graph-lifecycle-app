@@ -8,14 +8,17 @@
 
     <navigation
         android:id="@+id/main_graph"
-        app:startDestination="@id/homeActivity">
+        app:startDestination="@id/mainActivity">
         <activity
-            android:id="@+id/homeActivity"
+            android:id="@+id/mainActivity"
             android:name="com.patika.week3appnavigation.MainActivity"
             android:label="activity_home"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"
             tools:layout="@layout/activity_main" />
 
     </navigation>
+
     <navigation
         android:id="@+id/login_graph"
         app:startDestination="@id/loginFragment">
@@ -25,9 +28,7 @@
             android:label="DialogScreen">
             <action
                 android:id="@+id/action_dialogScreen_to_homeActivity"
-                app:destination="@id/main_graph"
-                app:popUpTo="@+id/nav_graph"
-                app:popUpToInclusive="true"/>
+                app:destination="@id/main_graph" />
         </dialog>
         <fragment
             android:id="@+id/loginFragment"
