@@ -35,15 +35,16 @@
             android:label="fragment_login"
             tools:layout="@layout/fragment_login">
             <action
-                android:id="@+id/action_loginFragment_to_authenticationTwo"
-                app:destination="@id/authenticationTwo" />
+                android:id="@+id/action_loginFragment_to_twoFAFragment"
+                app:destination="@id/twoFAFragment" />
         </fragment>
         <fragment
-            android:id="@+id/authenticationTwo"
-            android:name="com.patika.week3appnavigation.AuthenticationTwo"
-            android:label="AuthenticationTwo" >
+            android:id="@+id/twoFAFragment"
+            android:name="com.patika.week3appnavigation.TwoFAFragment"
+            android:label="TwoFAFragment"
+            tools:layout="@layout/fragment_two_f_a">
             <action
-                android:id="@+id/action_authenticationTwo_to_dialogScreen"
+                android:id="@+id/action_twoFAFragment_to_dialogScreen"
                 app:destination="@id/dialogScreen" />
         </fragment>
     </navigation>

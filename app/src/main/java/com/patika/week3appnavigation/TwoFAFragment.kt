@@ -28,7 +28,7 @@ class TwoFAFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         fragmentLoginBinding.apply {
             button2fa.setOnClickListener {
-                findNavController().navigate(R.id.action_authenticationTwo_to_dialogScreen)
+                findNavController().navigate(R.id.action_twoFAFragment_to_dialogScreen)
             }
         }
     }

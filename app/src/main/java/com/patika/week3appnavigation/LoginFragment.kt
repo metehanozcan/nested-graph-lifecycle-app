@@ -28,7 +28,7 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         fragmentLoginBinding.apply {
             buttonLogin.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_authenticationTwo)
+                findNavController().navigate(R.id.action_loginFragment_to_twoFAFragment)
             }
         }
     }
