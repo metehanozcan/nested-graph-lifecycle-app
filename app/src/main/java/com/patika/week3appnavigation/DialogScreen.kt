@@ -7,6 +7,10 @@ import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
 
 class DialogScreen : DialogFragment() {
+    /**
+     * Dialog screen that navigates to MainActivity if user approved authentication
+     * Clears backstack after navigate
+     */
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return activity?.let {
             val builder = AlertDialog.Builder(it)
@@ -14,7 +18,6 @@ class DialogScreen : DialogFragment() {
                 .setPositiveButton("OK") { dialog, id ->
                     findNavController().apply {
                         navigate(R.id.action_dialogScreen_to_homeActivity)
-
                         //code for cleaning all backstack
                         activity?.finishAffinity()
                     }
