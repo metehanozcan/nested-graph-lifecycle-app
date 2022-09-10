@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:defaultNavHost="false"
+    app:startDestination="@id/login_graph">
+
+    <navigation
+        android:id="@+id/main_graph"
+        app:startDestination="@id/homeActivity">
+        <activity
+            android:id="@+id/homeActivity"
+            android:name="com.patika.week3appnavigation.HomeActivity"
+            android:label="activity_home"
+            tools:layout="@layout/activity_home" />
+
+    </navigation>
+    <navigation
+        android:id="@+id/login_graph"
+        app:startDestination="@id/loginFragment">
+        <dialog
+            android:id="@+id/dialogScreen"
+            android:name="com.patika.week3appnavigation.DialogScreen"
+            android:label="DialogScreen">
+            <action
+                android:id="@+id/action_dialogScreen_to_homeActivity"
+                app:destination="@id/main_graph"
+                app:popUpTo="@+id/nav_graph"
+                app:popUpToInclusive="true"/>
+        </dialog>
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.patika.week3appnavigation.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_authenticationTwo"
+                app:destination="@id/authenticationTwo" />
+        </fragment>
+        <fragment
+            android:id="@+id/authenticationTwo"
+            android:name="com.patika.week3appnavigation.AuthenticationTwo"
+            android:label="AuthenticationTwo" >
+            <action
+                android:id="@+id/action_authenticationTwo_to_dialogScreen"
+                app:destination="@id/dialogScreen" />
+        </fragment>
+    </navigation>
+</navigation>
