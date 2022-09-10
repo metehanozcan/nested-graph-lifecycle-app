@@ -7,14 +7,24 @@
     tools:context=".HomeActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/main_textview"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/main_text"
         android:textSize="30sp"
-        android:text="Login Completed. Back press will exit app."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageview_home" />
+
+    <ImageView
+        android:id="@+id/imageview_home"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_aut_sucss" />
 </androidx.constraintlayout.widget.ConstraintLayout>
