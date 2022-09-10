@@ -11,9 +11,9 @@
         app:startDestination="@id/homeActivity">
         <activity
             android:id="@+id/homeActivity"
-            android:name="com.patika.week3appnavigation.HomeActivity"
+            android:name="com.patika.week3appnavigation.MainActivity"
             android:label="activity_home"
-            tools:layout="@layout/activity_home" />
+            tools:layout="@layout/activity_main" />
 
     </navigation>
     <navigation
