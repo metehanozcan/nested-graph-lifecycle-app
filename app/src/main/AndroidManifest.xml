@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Week3AppNavigation">
         <activity
-            android:name=".HomeActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".StartActivity"
