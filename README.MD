@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Nested Graph Navigation App
 
 * Navigation component ile nested graph kullanımı.
@@ -30,11 +29,8 @@ Navigasyon bileşeni, basit düğme tıklamaları ile uygulamadaki etkinlikler v
 * Navigasyon Bileşeni ViewModel'i de destekler. Hedefler arasında ilgili kullanıcı arayüzünü paylaşmak için bir görünüm modelini navigasyon grafiğine kapsamlandırabilir.
 
 
-=======
 ## Nested Graph Navigation App
-
-
 
 https://user-images.githubusercontent.com/70481060/189503540-d2874f9c-7c98-4227-a52b-89b724b01ddf.mp4
 
->>>>>>> eb996c9492909bafcbdf9f45a6f76eb1d08fdf0e
+
